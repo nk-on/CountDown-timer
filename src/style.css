@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +9,11 @@
     --dark-desaturated-blue: hsl(236, 21%, 26%);
     --very-dark-blue: hsl(235, 16%, 14%);
     --very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+    --clr-pink: hsla(345, 95%, 68%, 1);
     --clr-dark:hsla(0, 0%, 0%, 1);
+}
+body{
+    font-family: "Red Hat Text", sans-serif;
 }
 .box-container{
     display: flex;
@@ -17,12 +22,21 @@
     height: 100vh;
 }
 .box{
+    position: relative;
     border-radius: 8px;
     width: 148px;
     height: 150px;
     background-color: var(--dark-desaturated-blue);
 }
+.unit{
+    color: var(--clr-pink);
+    font-size: 80px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
 .first-half{
+    opacity: 0.15;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     height: 50%;

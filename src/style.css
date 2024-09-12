@@ -32,10 +32,11 @@ body{
     color: var(--clr-pink);
     font-size: 80px;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 40%;
 }
 .first-half{
+    background-color: var(--clr-dark);
     opacity: 0.15;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

@@ -14,6 +14,10 @@
 }
 body{
     font-family: "Red Hat Text", sans-serif;
+    background-color: var(--very-dark-blue);
+    background-image: url('/assets/bg-stars.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .box-container{
     display: flex;

@@ -28,6 +28,24 @@ body{
     height: 150px;
     background-color: var(--dark-desaturated-blue);
 }
+.circles{
+    width: 100%;
+    height: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle{
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: var(--very-dark-blue);
+    width: 12px;
+    height: 12px;
+}
+.circle-2{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
 .unit{
     color: var(--clr-pink);
     font-size: 80px;

@@ -41,6 +41,7 @@ body::after {
   width: 148px;
   height: 140px;
   background-color: var(--dark-desaturated-blue);
+  box-shadow: 2px 15px 5px 0px var(--very-dark-mostly-black-blue);
 }
 .circles {
   width: 100%;

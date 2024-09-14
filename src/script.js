@@ -10,6 +10,33 @@ const secondsContainer = document.querySelector('.unit-seconds');
 //if minutes reaches 0 subtract hours 1 
 //start hours from 23 if it reached 0 subtract days 1
     //set hours 23 again
-let seconds = minutes = 60;
-let hours = 24;
+let seconds =  60;
+let minutes = 59;
+let hours = 23;
 let days = 10;
+function displayUnit(unitContainer,unit){
+    unitContainer.textContent = unit;
+}
+function handleTime(){
+    seconds--;
+    displayUnit(secondsContainer,seconds);
+    if(seconds === 1){
+        seconds = 60;
+        minutes--;
+    };
+    displayUnit(minutesContainer,minutes);
+    if(minutes === 1){
+        minutes = 59;
+        hours--;
+    }
+    displayUnit(hoursContainer,hours);
+    if(hours < 0){
+        hours = 23;
+        days--;
+    };
+    displayUnit(daysContainer,days);
+};
+function countDown(){
+    handleTime();
+};
+setInterval(countDown,1000)

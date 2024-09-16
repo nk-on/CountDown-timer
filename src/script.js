@@ -37,7 +37,7 @@ function countDown() {
   }
     displayUnit(minutesContainer, minutes);
   if (minutes === 0) {
-    minutes = 59;
+    minutes = 60;
     hours--;
   }
   displayUnit(hoursContainer, hours);

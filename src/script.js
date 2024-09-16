@@ -28,7 +28,7 @@ function displayUnit(unitContainer, unit) {
   return;
 }
 //decreasing time units but reseting them if they reach 0
-function handleTime() {
+function countDown() {
   seconds--;
   displayUnit(secondsContainer, seconds);
   if (seconds === 0) {
@@ -46,8 +46,5 @@ function handleTime() {
     days--;
   }
   displayUnit(daysContainer, days);
-}
-function countDown() {
-  handleTime();
 }
 setInterval(countDown, 1000);

@@ -20,14 +20,27 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hills-pattern{
+.flow-management {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 20%;
+  gap: 10px;
+}
+.flow-management i {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--white);
+}
+.hills-pattern {
   position: absolute;
-  top:80%;
+  top: 80%;
   width: 100%;
   height: 20%;
   background-image: url("/assets/pattern-hills.svg");
 }
-.title{
+.title {
   font-family: "Red Hat Text";
   color: var(--white);
 }
@@ -40,23 +53,23 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.boxes-container{
+.boxes-container {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.box{
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-.unit-title{
+.unit-title {
   color: var(--dark-desaturated-blue);
 }
-.card{
+.card {
   position: relative;
   border-radius: 8px;
   width: 148px;
@@ -84,16 +97,16 @@ body {
   transform: rotate(180deg);
 }
 .unit {
-  width:100%;
+  width: 100%;
   height: 100%;
   color: var(--clr-pink);
   font-size: 80px;
   position: absolute;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
-.unit span{
+.unit span {
   font-weight: 700;
 }
 .first-half {
@@ -112,23 +125,23 @@ body {
   max-height: 50%;
   background-color: var(--dark-desaturated-blue);
 }
-.icons{
+.icons {
   position: absolute;
-  top:90%;
+  top: 90%;
   left: 40%;
   color: var(--white);
-  display:flex;
+  display: flex;
   justify-content: space-between;
   width: 15%;
   height: 30px;
   /* background-color: var(--white); */
 }
 @media only screen and (max-width: 600px) {
-    .card{
-      width: 70px;
-      height: 71px;
-    }
-    .unit{
-        font-size: 36px;
-    }
+  .card {
+    width: 70px;
+    height: 71px;
+  }
+  .unit {
+    font-size: 36px;
+  }
 }

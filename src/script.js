@@ -1,19 +1,13 @@
+//Dfining variables
 const daysContainer = document.querySelector(".unit-days");
 const hoursContainer = document.querySelector(".unit-hours");
 const minutesContainer = document.querySelector(".unit-minutes");
 const secondsContainer = document.querySelector(".unit-seconds");
-//function should called in every second
-//seconds variable should start from 60 and run till it reaches 0
-//and seconds should be 60 again
-//if it reaches 0 subtract minutes 1
-//and minutes should be 60 again
-//if minutes reaches 0 subtract hours 1
-//start hours from 23 if it reached 0 subtract days 1
-//set hours 23 again
 let seconds = 60;
 let minutes = 59;
 let hours = 23;
 let days = 15;
+//Spliting time unit into individual digits
 function splitToDigits(n) {
   const resArr = [];
   while (n > 0) {
@@ -24,6 +18,7 @@ function splitToDigits(n) {
   }
   return resArr.reverse();
 }
+//Displaying splited time unit digits into separete HTML spans
 function displayUnit(unitContainer, unit) {
   const firstDigitContainer = unitContainer.children[0];
   const secondDigitContainer = unitContainer.children[1];
@@ -32,6 +27,7 @@ function displayUnit(unitContainer, unit) {
   secondDigitContainer.textContent = digits[1];
   return;
 }
+//decreasing time units but reseting them if they reach 0
 function handleTime() {
   seconds--;
   displayUnit(secondsContainer, seconds);

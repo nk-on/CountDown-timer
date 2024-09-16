@@ -3,6 +3,8 @@ const daysContainer = document.querySelector(".unit-days");
 const hoursContainer = document.querySelector(".unit-hours");
 const minutesContainer = document.querySelector(".unit-minutes");
 const secondsContainer = document.querySelector(".unit-seconds");
+const pauseIcon = document.querySelector('#pause');
+const resumeIcon = document.querySelector('#resume');
 let seconds = 60;
 let minutes = 59;
 let hours = 23;
@@ -45,5 +47,13 @@ function countDown() {
     days--;
   }
   displayUnit(daysContainer, days);
+};
+function stopFlow(){
+  clearInterval(intervalFunction)
+};
+function resumeFlow(){
+  intervalFunction = setInterval(countDown, 1000);
 }
-setInterval(countDown, 1000);
+let intervalFunction = setInterval(countDown, 1000);
+pauseIcon.addEventListener('click',stopFlow);
+resumeIcon.addEventListener('click',resumeFlow)

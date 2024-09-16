@@ -25,7 +25,6 @@ function displayUnit(unitContainer, unit) {
   const digits = splitToDigits(unit);
   firstDigitContainer.textContent = digits[0];
   secondDigitContainer.textContent = digits[1];
-  return;
 }
 //decreasing time units but reseting them if they reach 0
 function countDown() {

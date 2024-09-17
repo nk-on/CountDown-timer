@@ -51,5 +51,9 @@ function countDown() {
 function stopFlow(){
   clearInterval(intervalFunction)
 };
-const intervalFunction = setInterval(countDown, 1000);
-pauseIcon.addEventListener('click',stopFlow)
+function resumeFlow(){
+  intervalFunction = setInterval(countDown, 1000);
+}
+let intervalFunction = setInterval(countDown, 1000);
+pauseIcon.addEventListener('click',stopFlow);
+resumeIcon.addEventListener('click',resumeFlow)

@@ -27,6 +27,7 @@ body {
   width: 10%;
   height: 20%;
   gap: 10px;
+  cursor: pointer;
 }
 .flow-management i {
   cursor: pointer;

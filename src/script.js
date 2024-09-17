@@ -48,12 +48,3 @@ function countDown() {
   }
   displayUnit(daysContainer, days);
 };
-function stopFlow(){
-  clearInterval(intervalFunction)
-};
-function resumeFlow(){
-  intervalFunction = setInterval(countDown, 1000);
-}
-let intervalFunction = setInterval(countDown, 1000);
-pauseIcon.addEventListener('click',stopFlow);
-resumeIcon.addEventListener('click',resumeFlow)

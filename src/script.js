@@ -5,10 +5,6 @@ const minutesContainer = document.querySelector(".unit-minutes");
 const secondsContainer = document.querySelector(".unit-seconds");
 const pauseIcon = document.querySelector('#pause');
 const resumeIcon = document.querySelector('#resume');
-// let seconds = 60;
-// let minutes = 59;
-// let hours = 23;
-// let days = 15;
 //Spliting time unit into individual digits
 function splitToDigits(n) {
   const resArr = [];

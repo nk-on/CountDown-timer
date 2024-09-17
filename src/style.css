@@ -13,26 +13,16 @@
   --clr-dark: hsla(0, 0%, 0%, 1);
 }
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   position: relative;
   font-family: "Red Hat Text", sans-serif;
   background-color: var(--very-dark-blue);
   background-image: url("/assets/bg-stars.svg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-.flow-management {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10%;
-  height: 20%;
-  gap: 10px;
-  cursor: pointer;
-}
-.flow-management i {
-  cursor: pointer;
-  font-weight: 700;
-  color: var(--white);
 }
 .hills-pattern {
   position: absolute;
@@ -42,17 +32,13 @@ body {
   background-image: url("/assets/pattern-hills.svg");
 }
 .title {
+  position: absolute;
+  top:20%;
+  left: 35%;
+  margin:0 auto;
+  letter-spacing: 7.5px;
   font-family: "Red Hat Text";
   color: var(--white);
-}
-.container {
-  padding-top: 90px;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 .boxes-container {
   width: 100%;
@@ -135,6 +121,12 @@ body {
   height: 30px;
 }
 @media only screen and (max-width: 600px) {
+  .title{
+    position: absolute;
+    top:25%;
+    left: 15%;
+    font-size: 16px;
+  }
   .card {
     width: 70px;
     height: 71px;

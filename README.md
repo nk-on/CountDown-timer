@@ -18,7 +18,7 @@ This Countdown Timer is a simple web application that counts down the days, hour
 3. **Celebrate:** As the countdown reaches zero, enjoy the festivities of the New Year!
 
 ## Demo
-![Countdown Timer Demo](/assets/Screenshots/Screenshot%202024-10-08%20at%2016.50.08.png)
+![Countdown Timer Demo](assets/Screenshots/Screenshot%202024-10-08%20at%2016.50.08.png)
 
 ## Installation
 No installation is necessary. Simply clone or download the repository, open the HTML file in your preferred web browser, and the countdown timer will be ready to use.

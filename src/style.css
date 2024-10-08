@@ -29,7 +29,7 @@ body {
   top: 80%;
   width: 100%;
   height: 20%;
-  background-image: url("/assets/pattern-hills.svg");
+  background-image: url("assets/pattern-hills.svg");
 }
 .title {
   position: absolute;

@@ -29,6 +29,7 @@ function displayUnit(unitContainer, unit) {
   secondDigitContainer.textContent = digits[1];
 }
 //decreasing time units but reseting them if they reach 0
+let intervalFun = setInterval(countDown,1000)
 function countDown() {
   const targetDate = new Date('12/31/2024');
   const currentDate = new Date();
@@ -37,9 +38,11 @@ function countDown() {
   const hoursDifferece =  Math.floor(differenceInTime / 3600) % 24;
   const minutesDifference = Math.floor(differenceInTime / 60) % 60;
   const secondsDifference = Math.floor(differenceInTime%60);
+  if(differenceInTime === 0 && daysDifference === 0 && hoursContainer === 0 && secondsDifference === 0){
+    clearInterval(intervalFun);
+  }
   displayUnit(daysContainer,daysDifference);
   displayUnit(hoursContainer,hoursDifferece);
   displayUnit(minutesContainer,minutesDifference);
   displayUnit(secondsContainer,secondsDifference);
 };
-setInterval(countDown,1000)
